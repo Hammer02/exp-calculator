@@ -219,6 +219,12 @@ const texts = {
     calculate: "計算",
     reset: "リセット",
     result: "必要経験値"
+      
+    seoTitle: "メジャスピ経験値計算ツールについて",
+    seoText1:
+      "このページは、メジャスピ（MLB PRO SPIRIT）の経験値を簡単に計算できる無料ツールです。現在のレベルと目標レベルを入力するだけで、必要な経験値をすぐに確認できます。",
+    seoText2:
+      "無課金プレイヤーや初心者の方が、効率よくレベル上げを進めるための目安として活用できます。"
   },
   en: {
     title: "MLB PRO SPIRIT EXP Calculator",
@@ -227,6 +233,13 @@ const texts = {
     calculate: "Calculate",
     reset: "Reset",
     result: "Required EXP"
+    
+    seoTitle: "About the MLB PRO SPIRIT EXP Calculator",
+    seoText1:
+      "This page provides a free tool to easily calculate experience points in MLB PRO SPIRIT. Simply enter your current level and target level to instantly see how much EXP is required.",
+    seoText2:
+      "This calculator is especially useful for beginners and free-to-play players who want to level up efficiently."
+  }
   }
 };
 
@@ -301,6 +314,11 @@ function switchLanguage(lang) {
   targetLvLabel.textContent = texts[lang].targetLv + "：";
   calcBtn.textContent = texts[lang].calculate;
   resetBtn.textContent = texts[lang].reset;
+
+  seoTitle.textContent = texts[lang].seoTitle;
+  seoText1.textContent = texts[lang].seoText1;
+  seoText2.textContent = texts[lang].seoText2;
+  
   result.textContent = "";
 }
 
@@ -327,6 +345,7 @@ switchLanguage(urlLang || savedLang || "ja");
     活用できます。
   </p>
 </section>
+
 
 
 
